@@ -5,4 +5,4 @@ This demo is built to demonstrate the use of N2HE on Logistic Regression, in And
 
 ## Prerequisites
 
-Android SDK = 14.0
+- Android SDK 14.0
