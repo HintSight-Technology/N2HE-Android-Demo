@@ -1,0 +1,494 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LogisticRegressionActivity">
+
+    <TextView
+        android:id="@+id/txtIdPrompt"
+        android:layout_width="198dp"
+        android:layout_height="22dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/idPrompt"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/scrollViewData"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/spinnerID"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtIdPrompt"
+        android:layout_alignStart="@+id/txtIdPrompt"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="@+id/txtIdPrompt"
+        app:layout_constraintTop_toBottomOf="@+id/txtIdPrompt" />
+
+    <ScrollView
+        android:id="@+id/scrollViewData"
+        android:layout_width="238dp"
+        android:layout_height="500dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerID">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txtLimitBal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txtLimitBal"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/limitBalText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/txtGender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtLimitBal"
+                android:layout_alignStart="@+id/txtLimitBal"
+                android:layout_marginTop="8dp"
+                android:text="@string/txtGender"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/genderText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/limitBalText"
+                android:layout_alignStart="@+id/limitBalText"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/txtEducation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtGender"
+                android:layout_alignStart="@+id/txtLimitBal"
+                android:layout_marginTop="8dp"
+                android:text="@string/txtEducation"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/educationText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtGender"
+                android:layout_alignStart="@+id/limitBalText"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/txtMarriage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtEducation"
+                android:layout_alignStart="@+id/txtLimitBal"
+                android:layout_marginTop="8dp"
+                android:text="@string/txtMarriage"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/marriageText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtEducation"
+                android:layout_alignStart="@+id/limitBalText"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/txtAge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtMarriage"
+                android:layout_alignStart="@+id/txtLimitBal"
+                android:layout_marginTop="8dp"
+                android:text="@string/txtAge"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/ageText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtMarriage"
+                android:layout_alignStart="@+id/limitBalText"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/txtPay0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtAge"
+                android:layout_alignStart="@+id/txtLimitBal"
+                android:layout_marginTop="8dp"
+                android:text="@string/txtPAY0"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/pay0Text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtAge"
+                android:layout_alignStart="@+id/limitBalText"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/txtPay2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtPay0"
+                android:layout_alignStart="@+id/txtLimitBal"
+                android:layout_marginTop="8dp"
+                android:text="@string/txtPAY2"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/pay2Text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtPay0"
+                android:layout_alignStart="@+id/limitBalText"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/txtPay3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtPay2"
+                android:layout_alignStart="@+id/txtLimitBal"
+                android:layout_marginTop="8dp"
+                android:text="@string/txtPAY3"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/pay3Text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtPay2"
+                android:layout_alignStart="@+id/limitBalText"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/txtPay4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtPay3"
+                android:layout_alignStart="@+id/txtLimitBal"
+                android:layout_marginTop="8dp"
+                android:text="@string/txtPAY4"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/pay4Text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtPay3"
+                android:layout_alignStart="@+id/limitBalText"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/txtPay5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtPay4"
+                android:layout_alignStart="@+id/txtLimitBal"
+                android:layout_marginTop="8dp"
+                android:text="@string/txtPAY5"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/pay5Text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtPay4"
+                android:layout_alignStart="@+id/limitBalText"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/txtPay6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtPay5"
+                android:layout_alignStart="@+id/txtLimitBal"
+                android:layout_marginTop="8dp"
+                android:text="@string/txtPAY6"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/pay6Text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtPay5"
+                android:layout_alignStart="@+id/limitBalText"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/txtBillAmt1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtPay6"
+                android:layout_alignStart="@+id/txtLimitBal"
+                android:layout_marginTop="8dp"
+                android:text="@string/txtBillAmt1"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/billAmt1Text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtPay6"
+                android:layout_alignStart="@+id/limitBalText"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/txtBillAmt2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtBillAmt1"
+                android:layout_alignStart="@+id/txtLimitBal"
+                android:layout_marginTop="8dp"
+                android:text="@string/txtBillAmt2"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/billAmt2Text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtBillAmt1"
+                android:layout_alignStart="@+id/limitBalText"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/txtBillAmt3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtBillAmt2"
+                android:layout_alignStart="@+id/txtLimitBal"
+                android:layout_marginTop="8dp"
+                android:text="@string/txtBillAmt3"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/billAmt3Text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtBillAmt2"
+                android:layout_alignStart="@+id/limitBalText"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/txtBillAmt4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtBillAmt3"
+                android:layout_alignStart="@+id/txtLimitBal"
+                android:layout_marginTop="8dp"
+                android:text="@string/txtBillAmt4"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/billAmt4Text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtBillAmt3"
+                android:layout_alignStart="@+id/limitBalText"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/txtBillAmt5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtBillAmt4"
+                android:layout_alignStart="@+id/txtLimitBal"
+                android:layout_marginTop="8dp"
+                android:text="@string/txtBillAmt5"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/billAmt5Text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/billAmt4Text"
+                android:layout_alignStart="@+id/limitBalText"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/txtBillAmt6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtBillAmt5"
+                android:layout_alignStart="@+id/txtLimitBal"
+                android:layout_marginTop="8dp"
+                android:text="@string/txtBillAmt6"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/billAmt6Text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtBillAmt5"
+                android:layout_alignStart="@+id/limitBalText"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/txtPayAmt1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtBillAmt6"
+                android:layout_alignStart="@+id/txtLimitBal"
+                android:layout_marginTop="8dp"
+                android:text="@string/txtPayAmt1"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/payAmt1Text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtBillAmt6"
+                android:layout_alignStart="@+id/limitBalText"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/txtPayAmt2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtPayAmt1"
+                android:layout_alignStart="@+id/txtLimitBal"
+                android:layout_marginTop="8dp"
+                android:text="@string/txtPayAmt2"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/payAmt2Text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtPayAmt1"
+                android:layout_alignStart="@+id/limitBalText"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/txtPayAmt3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtPayAmt2"
+                android:layout_alignStart="@+id/txtLimitBal"
+                android:layout_marginTop="8dp"
+                android:text="@string/txtPayAmt3"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/payAmt3Text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtPayAmt2"
+                android:layout_alignStart="@+id/limitBalText"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/txtPayAmt4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtPayAmt3"
+                android:layout_alignStart="@+id/txtLimitBal"
+                android:layout_marginTop="8dp"
+                android:text="@string/txtPayAmt4"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/payAmt4Text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtPayAmt3"
+                android:layout_alignStart="@+id/limitBalText"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/txtPayAmt5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtPayAmt4"
+                android:layout_alignStart="@+id/txtLimitBal"
+                android:layout_marginTop="8dp"
+                android:text="@string/txtPayAmt5"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/payAmt5Text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtPayAmt4"
+                android:layout_alignStart="@+id/limitBalText"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/txtPayAmt6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtPayAmt5"
+                android:layout_alignStart="@+id/txtLimitBal"
+                android:layout_marginTop="8dp"
+                android:text="@string/txtPayAmt6"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/payAmt6Text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtPayAmt5"
+                android:layout_alignStart="@+id/limitBalText"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/black" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btnAccessRisk"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="@string/btnAccessRisk"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollViewData" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

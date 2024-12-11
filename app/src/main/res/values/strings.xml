@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">N2HE Android Demo</string>
+    <string name="activity_logistic_regression">Logistic Regression</string>
+
+    <string name="idPrompt">Please select an ID to verify: </string>
+    <string name="txtIdHint">ID</string>
+    <string name="txtLimitBal">LIMIT_BAL: </string>
+    <string name="txtGender">GENDER: </string>
+    <string name="txtEducation">EDUCATION: </string>
+    <string name="txtMarriage">MARRIAGE: </string>
+    <string name="txtAge">AGE: </string>
+    <string name="txtPAY0">PAY_1: </string>
+    <string name="txtPAY2">PAY_2: </string>
+    <string name="txtPAY3">PAY_3: </string>
+    <string name="txtPAY4">PAY_4: </string>
+    <string name="txtPAY5">PAY_5: </string>
+    <string name="txtPAY6">PAY_6: </string>
+    <string name="txtBillAmt1">BILL_AMT1: </string>
+    <string name="txtBillAmt2">BILL_AMT2: </string>
+    <string name="txtBillAmt3">BILL_AMT3: </string>
+    <string name="txtBillAmt4">BILL_AMT4: </string>
+    <string name="txtBillAmt5">BILL_AMT5: </string>
+    <string name="txtBillAmt6">BILL_AMT6: </string>
+    <string name="txtPayAmt1">PAY_AMT1: </string>
+    <string name="txtPayAmt2">PAY_AMT2: </string>
+    <string name="txtPayAmt3">PAY_AMT3: </string>
+    <string name="txtPayAmt4">PAY_AMT4: </string>
+    <string name="txtPayAmt5">PAY_AMT5: </string>
+    <string name="txtPayAmt6">PAY_AMT6: </string>
+    <string name="btnAccessRisk">ACCESS RISK</string>
+
+</resources>
