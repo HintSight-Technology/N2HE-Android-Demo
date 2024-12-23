@@ -77,7 +77,7 @@ public class LogisticRegressionActivity extends AppCompatActivity {
                 dataID = position - 1;
                 System.out.println(dataID);
                 if (position > 0) {
-                    displayData(position);
+                    displayData(position-1);
                     encryptTabularData();
                 } else {
                     TextView textView = (TextView) view;
@@ -283,8 +283,9 @@ public class LogisticRegressionActivity extends AppCompatActivity {
 
         int row = 0;
         int col = 0;
-        while (reader.readLine() != null) {
-            String[] values = reader.readLine().split(" ");
+        String line = "";
+        while ((line=reader.readLine()) != null) {
+            String[] values = line.split(" ");
             for (String value : values) {
                 float valueF = Float.parseFloat(value);
                 data[row][col] = (int) valueF;
