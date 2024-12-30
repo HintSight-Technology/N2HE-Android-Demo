@@ -19,6 +19,8 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "N2HE Java Demo"
+rootProject.name = "N2HE Android Demo"
 include(":app")
+includeBuild("./android")
+
  
