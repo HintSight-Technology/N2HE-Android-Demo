@@ -8,7 +8,7 @@ android {
 
     defaultConfig {
         applicationId = "com.hintsight.n2heandroiddemo"
-        minSdk = 26
+        minSdk = 33
         targetSdk = 34
         versionCode = 1
         versionName = "1.0"
@@ -45,5 +45,11 @@ dependencies {
     implementation(libs.jackson.core)
     implementation(libs.jackson.annotations)
     implementation(libs.jackson.databind)
+
+    implementation("com.facebook.soloader:soloader:0.10.5")
+    implementation("com.facebook.fbjni:fbjni:0.5.1")
+    implementation("org.pytorch.executorch:executorch") {
+        exclude("com.facebook.fbjni", "fbjni-java-only")
+    }
 
 }
