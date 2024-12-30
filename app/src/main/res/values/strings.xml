@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">N2HE Android Demo</string>
     <string name="activity_logistic_regression">Logistic Regression</string>
+    <string name="activity_facial_verification">Facial Verification</string>
 
     <string name="idPrompt">Please select an ID to verify: </string>
     <string name="txtIdHint">ID</string>
@@ -28,5 +29,10 @@
     <string name="txtPayAmt5">PAY_AMT5: </string>
     <string name="txtPayAmt6">PAY_AMT6: </string>
     <string name="btnAccessRisk">ACCESS RISK</string>
+
+    <string name="namePrompt">Please enter your name here</string>
+    <string name="btnReset">RESET</string>
+    <string name="btnVerify">VERIFY</string>
+    <string name="runModel">Running verification…</string>
 
 </resources>
