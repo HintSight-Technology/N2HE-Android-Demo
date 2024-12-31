@@ -3,7 +3,7 @@ package com.hintsight.n2heandroiddemo;
 import java.util.Random;
 
 import static com.hintsight.n2heandroiddemo.Parameters.*;
-import static com.hintsight.n2heandroiddemo.Utils.*;
+import static com.hintsight.n2heandroiddemo.PolyUtils.*;
 
 public class Encryption {
     public static long[][] encrypt(int[] features, long[][] publicKey) {
