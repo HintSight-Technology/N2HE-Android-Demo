@@ -136,7 +136,7 @@ public class LogisticRegressionActivity extends AppCompatActivity {
         Log.d(TAG, "Reading secret key txt...");
         String string = "";
         StringBuilder stringBuilder = new StringBuilder();
-        InputStream inputStream = this.getResources().openRawResource(R.raw.rlwe_rlsk);
+        InputStream inputStream = this.getResources().openRawResource(R.raw.rlwe_lrsk);
         BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream));
 
         while ((string = reader.readLine()) != null) {
@@ -152,7 +152,7 @@ public class LogisticRegressionActivity extends AppCompatActivity {
         Log.d(TAG, "Reading public key txt...");
         String string = "";
         StringBuilder stringBuilder = new StringBuilder();
-        InputStream inputStream = this.getResources().openRawResource(R.raw.rlwe_rlpk);
+        InputStream inputStream = this.getResources().openRawResource(R.raw.rlwe_lrpk);
         BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream));
 
         int row = 0;
