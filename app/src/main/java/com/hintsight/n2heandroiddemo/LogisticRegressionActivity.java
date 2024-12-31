@@ -49,7 +49,7 @@ public class LogisticRegressionActivity extends AppCompatActivity {
     private final long[][] publicKey = new long[2][getPolyDegree()];
     private final int[] secretKey = new int[getPolyDegree()];
     private final Map<String, Object> postData = new HashMap<String, Object>();
-    private final NetworkManager networkManager = new NetworkManager(this,
+    private final NetworkManager networkManager = new NetworkManager(this, null,
             "", "", secretKey);
 
     private int dataID = -1;
