@@ -15,11 +15,21 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         Button btnLogisticRegression = findViewById(R.id.btnLogisticRegression);
+        Button btnFacialVerification = findViewById(R.id.btnFacialVerification);
 
         btnLogisticRegression.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, LogisticRegressionActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        btnFacialVerification.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, FacialVerificationActivity
+                        .class);
                 startActivity(intent);
             }
         });
