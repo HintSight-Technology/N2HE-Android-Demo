@@ -1,7 +1,7 @@
 package com.hintsight.n2heandroiddemo;
 
 import static com.hintsight.n2heandroiddemo.Parameters.*;
-import static com.hintsight.n2heandroiddemo.Utils.*;
+import static com.hintsight.n2heandroiddemo.PolyUtils.*;
 
 public class Decryption {
     public static long lwe64Dec(long[] encryptedResult, int[] secretKey, int polySize) {
