@@ -115,7 +115,7 @@ public class LogisticRegressionActivity extends AppCompatActivity {
 
         String serverPostUrl = "<SERVER_POST_URL>";
         networkManager.setServerPostUrl(serverPostUrl);
-        String serverGetUrl = "<SERVER_GET_URL>" + postData.get("name") +
+        String serverGetUrl = "<SERVER_GET_URL>/" + postData.get("name") +
                 "_" + postData.get("id") + ".json";
         networkManager.setServerGetUrl(serverGetUrl);
         networkManager.mode = "LogisticRegression";
